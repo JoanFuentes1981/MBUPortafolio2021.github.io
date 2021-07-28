@@ -1,18 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
+@import url(menu.css);
+@import url(abotume.css);
+@import url(contacto.css);
+@import url(fontello.css);
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+    font-family: 'Arial'
+    margin: 0;
+    margin-bottom: 40px;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: 0;
 }
 
+
+header div.contenedor1{
+    display: flex;
+    margin: auto;
+}
+
+.contenedor1 img{
+    width: 30%;
+    height: 30%;
+    justify-content: center;
+    margin: auto;
+}
+
 body{
-    font-family: 'Arial'
+	font-family: 'Lato', sans-serif;
+}
+
+.contenedor{
+	width: 90%;
+	margin: auto;	
 }
 
 .container-grid{
-    display: grid;
-    height: 100vh;
+	width: 90%;
+	margin: auto;	
+}
+
+.container-grid{
+    display:grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);    
     grid-template-areas: 
         "img1 img2"
         "img3 img4"
@@ -24,12 +64,15 @@ body{
         "img15 img16"
         "img17 img18"
         "img19 img20"
+        "img21 img22"
+        "img23 img24"
 }
 
 .img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin: auto;
 }
 
 img:hover{
@@ -37,12 +80,14 @@ img:hover{
     cursor: pointer;
     transition: filter .5s;
 }
+
 .img-1{
     grid-area: img1;
 }
 .img-2{
     grid-area: img2;
 }
+
 .img-3{
     grid-area: img3;
 }
@@ -97,6 +142,19 @@ img:hover{
 .img-20{
     grid-area: img20;
 }
+.img-21{
+    grid-area: img21;
+}
+.img-22{
+    grid-area: img22;
+}
+.img-23{
+    grid-area: img23;
+}
+.img-24{
+    grid-area: img24;
+}
+
 
 .container-img{
     position: fixed;
@@ -110,6 +168,7 @@ img:hover{
     justify-content: center;
     align-items: center;
     transition: transform .4s ease-in;
+/*    margin-top: 20px;*/
 }
 
 .img-show{
@@ -142,9 +201,21 @@ img:hover{
     transform: translateX(0);
 }
 
+footer .contenedor{
+    margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+    text-align: center;
+    width: 200px;
+}
+
 @media screen and (max-width:700px){
     .img-show{
         width: 90%;
+        height: 90%;
+        object-fit: contain;
     }
     
     .bx.bx-message-square-x{

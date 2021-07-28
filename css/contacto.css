@@ -44,10 +44,12 @@ container.column--50{
         width: 49%;
 }
 
-.formulario{
-    padding: 10px;
-    padding-top: 0;
-    
+.group_contact .icon-facebook{
+    font-size: 40px;
+}
+
+.group_contact .icon-instagram{
+    font-size: 40px;
 }
 
 .contact-information .social-icon{
