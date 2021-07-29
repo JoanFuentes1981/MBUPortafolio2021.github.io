@@ -1,0 +1,42 @@
+/*
+*{box-sizing:border-box;}
+*/
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+}
+
+.social{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+    z-index: 100;
+    border-radius: 10 20 30 2rem;
+}
+
+
+.icon{
+    width: 30px;
+    background: whitesmoke;
+    text-decoration: none;
+    padding: .4rem;
+    display: flex;
+    transition: all .5s;
+}
+.icon:first-child{
+  border-radius: 1rem 5 5 5;
+}
+
+.icon:last-child{
+    border-radius: 5 5 5 1rem;
+
+}
+

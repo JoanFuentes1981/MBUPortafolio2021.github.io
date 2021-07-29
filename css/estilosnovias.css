@@ -17,16 +17,14 @@
         "img4 img5 img6"
 }
 
-.container-grid-novias{
+.contenedor{
     width: 100%;
     height: 100%;
 }
 
-.contenedor img{
-    margin-top: 20px;
+.container-grid-novias{
     width: 100%;
     height: 100%;
-    object-fit: contain;
 }
 
 .titulo-grid{
@@ -41,6 +39,7 @@
     width: 100%;
     text-align: center;
 }
+
 #grid .img{
     width: 100%;
     height: 100%;
@@ -50,12 +49,17 @@
 #bienvenidos h2{
     text-align: center;
 }
-
+.imagen-novias img{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
 #bienvenidos p{
-    text-align: justify;
-    text-justify: inter-palabra;
     font-family: 'Baloo Paaji 2', cursive;
-    font-size-adjust: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    align-content: center;
+    justify-content: center;
 }
 
 .opiniones{
@@ -107,10 +111,12 @@
     grid-area: img6;
 }
 
+/*
 @media screen and (max-width:700px){
     
 }
-
+*/
+/*
 @media screen and (min-width:900px){
     .contenedor, .contenedor1{
         width: 100%;
@@ -119,4 +125,4 @@
         width: 100%;
         height: 100%;
     }
-}
+}*/

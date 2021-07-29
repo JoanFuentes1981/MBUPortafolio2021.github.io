@@ -44,6 +44,7 @@ container.column--50{
         width: 49%;
 }
 
+/*
 .group_contact .icon-facebook{
     font-size: 40px;
 }
@@ -51,6 +52,7 @@ container.column--50{
 .group_contact .icon-instagram{
     font-size: 40px;
 }
+*/
 
 .contact-information .social-icon{
     justify-content: flex-start;
@@ -63,4 +65,9 @@ container.column--50{
     color: white;
     margin-left: 0;
     margin-right: 15px;
+}
+
+.redsocial img{
+    width: 40px;
+    height: 40px;
 }
